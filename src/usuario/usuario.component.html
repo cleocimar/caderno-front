@@ -1,0 +1,23 @@
+<p>usuario works!</p>
+<table>
+    <thead>
+        <th>Email</th>
+        <th>Nome</th>
+        <th>Apelido</th>
+        <th>Senha</th>
+        <th>Perfil</th>
+    </thead>
+    <tbody>
+        @for(s of usuarioList; track s.nome ){
+            <tr>
+                <td>{{s.email}}</td>
+                <td>{{s.nome}}</td>
+                <td>{{s.apelido}}</td>
+                <td>{{s.senha}}</td>
+                <td>{{s.perfil}}</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
