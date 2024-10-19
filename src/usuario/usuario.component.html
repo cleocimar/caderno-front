@@ -1,20 +1,24 @@
 <p>usuario works!</p>
 <table>
     <thead>
-        <th>Email</th>
+        <th>UserName</th>
         <th>Nome</th>
         <th>Apelido</th>
-        <th>Senha</th>
         <th>Perfil</th>
+        <th>Is_Staff</th>
+        <th>is_Superuser</th>
+        <th>Password</th>
     </thead>
     <tbody>
         @for(s of usuarioList; track s.nome ){
             <tr>
-                <td>{{s.email}}</td>
+                <td>{{s.username}}</td>
                 <td>{{s.nome}}</td>
                 <td>{{s.apelido}}</td>
-                <td>{{s.senha}}</td>
                 <td>{{s.perfil}}</td>
+                <td>{{s.is_staff}}</td>
+                <td>{{s.is_superuser}}</td>
+                <td>{{s.password}}</td>
             </tr>
         }
     </tbody>

@@ -2,11 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 class Usuario {
-  email: string;
+  username: string;
   nome: string;
   apelido: string;
-  senha: string;
+  password: string;
   perfil: string;
+  is_superuser: Boolean;
+  is_staff: Boolean;
 }
 
 @Component({
